@@ -84,6 +84,6 @@ ResultInactive=$result_inactive\n",
 # come with a much different version of it. The details above don't make sense
 # for any other OS than RHEL6, so we won't bother dealing with other OSes on a
 # case-by-case basis here.
-        unimplemented()
+        fail "unimplemented on ${::osfamily} ${::operatingsystemrelease}"
     }
 }
