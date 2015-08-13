@@ -59,7 +59,7 @@
 # about it.
 class policykit {
     file { "/etc/polkit-1":
-        owner => root, group => 0, mode => 0600,
+        owner => root, group => 0, mode => '0600',
         recurse => true, recurselimit => 3,
     }
     no_ext_acl { "/etc/polkit-1": recurse => true }

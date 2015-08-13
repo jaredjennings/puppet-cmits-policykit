@@ -64,7 +64,7 @@ localauthority/90-mandatory.d",
 ${order}-cmits-${name}.pkla":
                 owner => root,
                 group => 0,
-                mode => 0600,
+                mode => '0600',
                 content => "\
 [$description]\n\
 Identity=$identity\n\
